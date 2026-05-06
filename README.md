@@ -29,6 +29,7 @@ rename: git branch -m <name>
 initiate git in directory: git init
 
 to be able to create a branch you need to:
+
 create a file
 git add . // stages the file> to be commited later
 git commit -m "message" // commit the changes made in file
