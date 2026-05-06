@@ -1,9 +1,9 @@
 # Configuratie globala a proiectului
-from app.lib import biblioteca_coreea as sk
+from app.lib import biblioteca_belgia as belg
 
 TARI = {
-    'coreea-de-sud': {
-        'nume': 'Coreea de Sud',
+    'belgia': {
+        'nume': 'Belgia',
     },
 
 
@@ -14,14 +14,14 @@ TARI = {
 # Mapare tara -> biblioteca
 
 BIBLIOTECI = {
-    'coreea-de-sud': sk,
+    'belgia': belg,
      #adauga tara> 'tara': tara
 }
 
 
 # Mapare tara -> template
 TEMPLATE_TARA = {
-    'coreea-de-sud': 'coreea.html',
+    'belgia': 'belgia.html',
 
 
 }
