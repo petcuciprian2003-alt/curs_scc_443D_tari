@@ -15,7 +15,7 @@ templates>
 - home.html - se adauga tara fiecaruia pe  modelul din cod
 - pagina.html - NU SE MODIFICA
 - steag.html - NU SE MODIFICA
-
+g
 tests>
 - fiecare isi face ce teste vrea
 
