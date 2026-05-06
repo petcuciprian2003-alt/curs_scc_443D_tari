@@ -4,22 +4,16 @@ from flask import Flask, render_template, abort
 #from app.lib import biblioteca_tara as <tara> as <nume-tara SAU prescurtare>
 
 
-from app.lib import biblioteca_coreea as sk
-
 
 '''NU SE MODIFICA'''
 from app.lib import biblioteca_header as header
-from app.lib.biblioteca_tari import TARI, TEMPLATE_TARA
+from app.lib.biblioteca_tari import TARI, TEMPLATE_TARA, BIBLIOTECI
 
 # Mapare tara -> biblioteca
-BIBLIOTECI = {
-    'coreea-de-sud': sk,
-     #adauga tara> 'tara': tara
-}
+
 
 print('Proiect SCC - Tari')
 app = Flask(__name__)
-
 
 
 '''NU SE MAI MODIIFICA NIMIC IN REST'''
