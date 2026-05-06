@@ -6,7 +6,8 @@ app>lib>
 - biblioteca_tara - modifica fiecare pt tara lui
 - biblioteca_header - NU SE MODIFICA
 
-static> pune poza cu steag: steag_tara.py
+static>
+- pune poza cu steag: steag_tara.py
 
 templates> 
 - base.html - nu se modifica
