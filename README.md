@@ -31,10 +31,10 @@ initiate git in directory: git init
 to be able to create a branch you need to:
 
 create a file
-git add . // stages the file> to be commited later
-git commit -m "message" // commit the changes made in file
-git pull // pull info from github to local (from up to down)
-git push -u origin main // push commits to the github repo (cloud) (from down to up)
+- git add . // stages the file> to be commited later
+- git commit -m "message" // commit the changes made in file
+- git pull // pull info from github to local (from up to down)
+- git push -u origin main // push commits to the github repo (cloud) (from down to up)
 
 connect to online repository
 You only need to do this once per project.
