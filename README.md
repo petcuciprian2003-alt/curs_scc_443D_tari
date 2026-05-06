@@ -37,7 +37,7 @@ create a file
 
 connect to online repository
 You only need to do this once per project.
-git remote add origin [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
+git remote add origin (https://github.com/raduionutgavrila/curs_scc_443D_tari.git)
 
 
 create a branch, while staying on the same branch: git checkout dev
