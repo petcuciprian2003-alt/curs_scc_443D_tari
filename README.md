@@ -10,14 +10,16 @@ static>
 - pune poza cu steag: steag_tara.py
 
 templates> 
-- base.html - nu se modifica
+- base.html - NU SE MODIFICA
 - <tara-mea>.html - doar copy paste cod si se modifica numai numele tarii
-- home.html - se adauga tara fiecaruiaa pe  modelul din cod
-- pagina.html - generaliza, nu e nev de modificare
-- steag.html - generalizat, nu se modifica
+- home.html - se adauga tara fiecaruia pe  modelul din cod
+- pagina.html - NU SE MODIFICA
+- steag.html - NU SE MODIFICA
 
 tests>
 - fiecare isi face ce teste vrea
+
+- tari.py - NU SE MODIFICA
 
 
 ## Comenzi GIT
