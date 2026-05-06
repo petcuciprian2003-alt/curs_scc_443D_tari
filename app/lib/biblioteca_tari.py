@@ -11,6 +11,8 @@ TARI = {
 }
 
 
+# Mapare tara -> biblioteca
+
 BIBLIOTECI = {
     'coreea-de-sud': sk,
      #adauga tara> 'tara': tara

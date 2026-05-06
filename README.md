@@ -9,7 +9,7 @@ app>lib>
 static>
 - pune poza cu steag: steag_tara.py
 
-templates> 
+templates> - fisiere html pentru interfata grafica 
 - base.html - NU SE MODIFICA
 - <tara-mea>.html - doar copy paste cod si se modifica numai numele tarii
 - home.html - se adauga tara fiecaruia pe  modelul din cod
