@@ -3,22 +3,20 @@
 # PROIECT SCC - INFORMATII TEMPLATE
 
 app>lib>
-biblioteca_tara - modifica fiecare pt tara lui
-biblioteca_header - NU SE MODIFICA
+- biblioteca_tara - modifica fiecare pt tara lui
+- biblioteca_header - NU SE MODIFICA
 
 static> pune poza cu steag: steag_tara.py
 
 templates> 
-base.html - nu se modifica
-<tara-mea>.html - doar copy paste cod si se modifica numai numele tarii
-home.html - se adauga tara fiecaruiaa pe  modelul din cod
-pagina.html - generaliza, nu e nev de modificare
-steag.html - generalizat, nu se modifica
+- base.html - nu se modifica
+- <tara-mea>.html - doar copy paste cod si se modifica numai numele tarii
+- home.html - se adauga tara fiecaruiaa pe  modelul din cod
+- pagina.html - generaliza, nu e nev de modificare
+- steag.html - generalizat, nu se modifica
 
 tests>
-fiecare isi face ce teste vrea
-
-config.py - 
+- fiecare isi face ce teste vrea
 
 
 ## Comenzi GIT
