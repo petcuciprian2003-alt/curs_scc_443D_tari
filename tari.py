@@ -1,27 +1,20 @@
 from flask import Flask, render_template, abort
 
-# se va da import la fiecare biblioteca a tarii
-#from app.lib import biblioteca_tara as <tara> as <nume-tara SAU prescurtare>
-
-
-
-'''NU SE MODIFICA'''
 from app.lib import biblioteca_header as header
-from app.lib.biblioteca_tari import TARI, TEMPLATE_TARA, BIBLIOTECI
+from app.lib.biblioteca_tari import TARI, BIBLIOTECI
 
-# Mapare tara -> biblioteca
 
 
 print('Proiect SCC - Tari')
 app = Flask(__name__)
 
 
-'''NU SE MAI MODIIFICA NIMIC IN REST'''
+'''NU SE MAI MODIIFICA NIMIC '''
 
 
 @app.route("/", methods=['GET'])
 def pagina_home():
-    return render_template('home.html')
+    return render_template('home.html', tari=TARI)
 
 
 @app.route("/<tara>", methods=['GET'])
@@ -30,7 +23,7 @@ def pagina_tara(tara):
         abort(404)
     bib = BIBLIOTECI[tara]
     descriere = bib.descriere_tara()
-    return render_template(TEMPLATE_TARA[tara], descriere=descriere, tara=tara)
+    return render_template('tara.html', descriere=descriere, tara=tara, tara_nume=TARI[tara]['nume'])
 
 
 @app.route("/<tara>/capitala", methods=['GET'])

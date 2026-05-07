@@ -33,9 +33,12 @@
 <h1>Proiect SCC - Țări</h1>
 <h2 style="font-size: 24px; color: #333;">Selectează o țară pentru a vedea detalii</h2>
 <div class="tari-lista">
+    {% for tara_key, tara_info in tari.items() %}
     <div class="tara-card">
-        <a href="/belgia">Belgia</a>
+        <a href="/{{ tara_key }}">{{ tara_info.nume }}</a>
     </div>
+    {% endfor %}
+
 
 
 
