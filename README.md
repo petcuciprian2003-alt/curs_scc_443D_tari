@@ -2,16 +2,16 @@
 
 Acest branch este template-ul de proiect pentru grupa. Scopul este ca fiecare student sa foloseasca aceeasi structura a site-ului si sa modifice ce este necesar pentru tara proprie. 
 
-## Ce se modifica
+## Ce se modifica in /app/lib/
 
-In acest proiect, trebuie modificat:
+In acest director, trebuie modificat:
 
 - `app/lib/biblioteca_belgia.py`
 - `app/lib/biblioteca_tari.py`
 
 
 
-Modifica fisierul `app/lib/biblioteca_belgia.py` cu numele tarii alese `app/lib/biblioteca_<tara_mea>.py` (de exemplu `biblioteca_romania.py`).
+Redenumeste fisierul `app/lib/biblioteca_belgia.py` cu numele tarii alese `app/lib/biblioteca_<tara_mea>.py` (de exemplu `biblioteca_romania.py`).
   
 - In `biblioteca_<tara_mea>.py`, adauga continut corespuzator tarii alease in functiile:
   - `descriere_tara()`
@@ -27,7 +27,7 @@ Apoi trebuie adaugata:
 1. o pereche in `TARI` pentru numele tarii
 2. o intrare in `BIBLIOTECI` pentru biblioteca tarii alese 
 
-Obs: Eliminati intrarile cu Belgia; sunt doar de model !
+Obs: Eliminati intrarile cu Belgia; sunt doar de exemplu !
 
 ### Exemplu de actualizare in `app/lib/biblioteca_tari.py`
 
@@ -44,6 +44,18 @@ BIBLIOTECI = {
     'tara_mea': prescurtare_biblioteca_tara_mea,
 }
 ```
+## Ce se modifica in /app/tests
+
+
+Fisierul test_belgia.py este un test automatizat care verifică funcțiile din biblioteca țării . 
+El importă funcțiile principale (descriere_tara, descriere_capitala, descriere_limbi, descriere_populatie), definește valori așteptate pentru fiecare și folosește assert result == expected_result pentru a confirma că rezultatul funcțiilor corespunde exact cu ce trebuie. 
+
+1. Redenumeste `app/tests/test-bib-header.py` cu numele tarii alese `app/tests/test_<tara_mea>.py` (de exemplu `test_romania.py`).
+2. Schimbă importul din `biblioteca_belgia` în `biblioteca_<tara_mea>` (asa cum este mentionat si comentariu)
+3. Actualizează fiecare `expected_result` cu valoarea aleasa pentru țara ta
+
+
+
 
 
 ## Ce se adauga in `static/`
@@ -77,6 +89,10 @@ BIBLIOTECI = {
 - `tara.html` - template generic pentru pagina fiecarei tari, unde este afisat rezultatul functiei descriere_tara()
 - `pagina.html` - pagina folosita pentru a afisa rezultatul funtiilor descriere_capitala() / descriere_populatie() / descriere_limbi()
 - `steag.html` - pagina folosita pentru a afisa rezultatul functiei descriere_steag()
+  
+`tari.py` - fișierul principal al aplicației Flask care gestionează rutele web și afișează informații despre țări. Este intermediar între cererile web și bibliotecile fiecărei țări, oferind utilizatorului informații formatate despre acestea.
+
+
 
 ## Scripturi de activare si rulare
 
@@ -84,17 +100,11 @@ BIBLIOTECI = {
 
 Acest script activeaza mediul virtual Python din `.venv`. Comanda:  `. ./activeaza_venv`
 
-- Incarca ` . .venv/bin/activate`
-- Daca activarea esueaza, incearca varianta `activeaza_venv_jenkins`
-- Este folosit pentru a asigura ca python si dependintele sunt executate in mediul corect
 
 ### `ruleaza_aplicatia`
 
 Acest script porneste aplicatia Flask local. Comanda: `./ruleaza_aplicatia`
 
-- seteaza `FLASK_APP=tari`
-- ruleaza `flask run -p 5011 --reload`
-- `--reload` face serverul sa se reporneasca automat cand faci modificari in cod
 
 ### `dockerstart.sh`
 
@@ -105,15 +115,25 @@ Acest script face acelasi lucru, dar cu optiuni suplimentare:
 - afiseaza directorul curent si continutul fisierelor
 - porneste serverul Flask pe `0.0.0.0:5011` cu `--reload`
 
-### Permisiuni de executie
+## Permisiuni de executie
 
-Pentru a rula scripturile, trebuie sa le dai permisiuni de executie:
+Pentru a rula scripturile, trebuie acordate permisiuni de executie:
 
 ```bash
 chmod 764 activeaza_venv ruleaza_aplicatia dockerstart.sh
 ```
 
-## Pasi recomandati pentru proiect
+## Testare cu Pytest
+
+Pentru a rula testele, mergeți în directorul principal al proiectului și folosiți comanda:
+
+`pytest app/tests/test_<tara_mea>.py -v`
+
+Aceasta verifica fiecare funcție din fișier și arata ce teste trec sau ce teste eșuează. Asigurati-va ca aveti venv-ul pornit.
+
+
+
+# Pasi recomandati pentru proiect
 
 1. `git clone https://github.com/raduionutgavrila/curs_scc_443D_tari.git` - pentru a copia local repository-ul
 2. `git checkout dev-template` - pentru a selecta ramura de dezvolatare cu template-ul
@@ -122,10 +142,11 @@ chmod 764 activeaza_venv ruleaza_aplicatia dockerstart.sh
 5. redenumeste `app/lib/biblioteca_belgia.py` in `app/lib/biblioteca_<tara_mea>.py` si modifica continutul functiilor
 6. adauga poza cu steagul in `static/` si adauga link catre acesta in functia din 'biblioteca_<tara_mea>.py'
 7. ruleaza cu `. ./activeaza_venv` si `./ruleaza_aplicatia`
+8. testeaza cu `pytest app/tests/test_<tara_mea>.py -v`
+
 
 # Ce mai trebuie adaugat
 
-- Modificare fisier de test in 'app/tests' cu denumirea 'test_<tara_mea>.py'
 - Creare Dockerfile
 - Creare Jenkinsfile
 
