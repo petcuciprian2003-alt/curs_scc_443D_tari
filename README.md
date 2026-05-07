@@ -119,10 +119,19 @@ chmod 764 activeaza_venv ruleaza_aplicatia dockerstart.sh
 2. `git checkout dev-template` - pentru a selecta ramura de dezvolatare cu template-ul
 3. `git checkout -b dev-nume-prenume` - pentru a crea o noua ramura de dezvoltare pornind de la template
 4. modifica `app/lib/biblioteca_tari.py`
-5. modifica `app/lib/biblioteca_belgia.py` in `app/lib/biblioteca_<tara_mea>.py`
+5. redenumeste `app/lib/biblioteca_belgia.py` in `app/lib/biblioteca_<tara_mea>.py` si modifica continutul functiilor
 6. adauga poza cu steagul in `static/` si adauga link catre acesta in functia din 'biblioteca_<tara_mea>.py'
-7. ruleaza cu `./activeaza_venv` si `./ruleaza_aplicatia`
+7. ruleaza cu `. ./activeaza_venv` si `./ruleaza_aplicatia`
+
+# Ce mai trebuie adaugat
+
+- Modificare fisier de test in 'app/tests' cu denumirea 'test_<tara_mea>.py'
+- Creare Dockerfile
+- Creare Jenkinsfile
 
 ## Observatie finala
 
 Scripturile din aceasta aplicatie sunt introduse dupa modelul aplicatiei `chrchende/sysinfo:simplu_main`.
+
+
+  
