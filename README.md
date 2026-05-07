@@ -47,10 +47,10 @@ BIBLIOTECI = {
 ## Ce se modifica in /app/tests
 
 
-Fisierul test_belgia.py este un test automatizat care verifică funcțiile din biblioteca țării . 
+Fisierul test_lib_belgia.py este un test automatizat care verifică funcțiile din biblioteca țării . 
 El importă funcțiile principale (descriere_tara, descriere_capitala, descriere_limbi, descriere_populatie), definește valori așteptate pentru fiecare și folosește assert result == expected_result pentru a confirma că rezultatul funcțiilor corespunde exact cu ce trebuie. 
 
-1. Redenumeste `app/tests/test-bib-header.py` cu numele tarii alese `app/tests/test_<tara_mea>.py` (de exemplu `test_romania.py`).
+1. Redenumeste `app/tests/test_lib_belgia.py` cu numele tarii alese `app/tests/test_lib_<tara_mea>.py` (de exemplu `test_romania.py`).
 2. Schimbă importul din `biblioteca_belgia` în `biblioteca_<tara_mea>` (asa cum este mentionat si comentariu)
 3. Actualizează fiecare `expected_result` cu valoarea aleasa pentru țara ta
 
@@ -108,12 +108,7 @@ Acest script porneste aplicatia Flask local. Comanda: `./ruleaza_aplicatia`
 
 ### `dockerstart.sh`
 
-Acest script face acelasi lucru, dar cu optiuni suplimentare:
-
-- activeaza environment-ul virtual
-- seteaza `FLASK_APP=tari`
-- afiseaza directorul curent si continutul fisierelor
-- porneste serverul Flask pe `0.0.0.0:5011` cu `--reload`
+Acest script face acelasi lucru, dar cu optiuni suplimentare. Este apelat in fisierul Dockerfile
 
 ## Permisiuni de executie
 
@@ -127,7 +122,7 @@ chmod 764 activeaza_venv ruleaza_aplicatia dockerstart.sh
 
 Pentru a rula testele, mergeți în directorul principal al proiectului și folosiți comanda:
 
-`pytest app/tests/test_<tara_mea>.py -v`
+`pytest app/tests/test_lib_<tara_mea>.py -v`
 
 Aceasta verifica fiecare funcție din fișier și arata ce teste trec sau ce teste eșuează. Asigurati-va ca aveti venv-ul pornit.
 
@@ -142,7 +137,7 @@ Aceasta verifica fiecare funcție din fișier și arata ce teste trec sau ce tes
 5. redenumeste `app/lib/biblioteca_belgia.py` in `app/lib/biblioteca_<tara_mea>.py` si modifica continutul functiilor
 6. adauga poza cu steagul in `static/` si adauga link catre acesta in functia din 'biblioteca_<tara_mea>.py'
 7. ruleaza cu `. ./activeaza_venv` si `./ruleaza_aplicatia`
-8. testeaza cu `pytest app/tests/test_<tara_mea>.py -v`
+8. testeaza cu `pytest app/tests/test_lib_<tara_mea>.py -v`
 
 
 # Ce mai trebuie adaugat
