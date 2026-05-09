@@ -122,7 +122,7 @@ chmod 764 activeaza_venv ruleaza_aplicatia dockerstart.sh
 
 Pentru a rula testele, mergeți în directorul principal al proiectului și folosiți comanda:
 
-`pytest app/tests/test_lib_<tara_mea>.py -v`
+`pytest app/tests/*.py -v`
 
 Aceasta verifica fiecare funcție din fișier și arata ce teste trec sau ce teste eșuează. Asigurati-va ca aveti venv-ul pornit.
 
