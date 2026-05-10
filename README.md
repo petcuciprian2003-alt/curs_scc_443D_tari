@@ -71,7 +71,7 @@ Rute disponibile:
 
     /serbia/steag - steagul
 
-![]
+![](screenshots/Screenshot from 2026-05-10 14-40-38.png)
 Testare automată cu pytest
 bash
 
