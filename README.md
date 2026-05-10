@@ -85,6 +85,7 @@ Testare cu Docker
 bash
 
 docker build -t tari:v01 .
+![](screenshots/Screenshot from 2026-05-10 15-35-45.png)
 docker run -d --name tari_serbia -p 8020:5000 tari:v01
 
 Accesare: http://localhost:8020/serbia
