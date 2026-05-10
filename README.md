@@ -1,3 +1,4 @@
+
 # Proiect SCC - Țări
 
 ## Dezvoltator
@@ -51,15 +52,15 @@ Aplicația este implementată utilizând framework-ul web Flask, fiind proiectat
 
 ## Testare manuală în browser
 
-
 **Rulare locală:**
 
-```bash
+bash
 cd curs_scc_443D_tari
 . ./activeaza_venv
 ./ruleaza_aplicatia
-
 Aplicația poate fi accesată la: http://127.0.0.1:5011/serbia
+
+![](screenshots/Screenshot from 2026-05-10 15-51-26.png)
 
 Rute disponibile:
 
@@ -71,7 +72,7 @@ Rute disponibile:
 
     /serbia/steag - steagul
 
-[SCREENSHOT: Aplicația locală în browser]
+![](screenshots/Screenshot from 2026-05-10 14-40-38.png)
 Testare automată cu pytest
 bash
 
@@ -80,16 +81,22 @@ pytest app/tests/test_lib_serbia.py -v
 
 Rezultat: 4/4 teste trecute cu succes ✅
 
-[SCREENSHOT: pytest 4 passed]
+![](screenshots/Screenshot from 2026-05-10 14-12-21.png)
 Testare cu Docker
 bash
 
 docker build -t tari:v01 .
+
+![](screenshots/Screenshot from 2026-05-10 15-35-45.png)
+bash
+
 docker run -d --name tari_serbia -p 8020:5000 tari:v01
+
+![](screenshots/Screenshot from 2026-05-10 15-37-46.png)
 
 Accesare: http://localhost:8020/serbia
 
-[SCREENSHOT: Docker build + run + browser]
+![](screenshots/Screenshot from 2026-05-10 15-50-31.png)
 DevOps CI - Jenkins
 
 Pipeline-ul Jenkins include:
@@ -100,7 +107,7 @@ Pipeline-ul Jenkins include:
 
     Build Docker - construire imagine
 
-[SCREENSHOT: Jenkins grafic + Console Output SUCCESS]
+![](screenshots/Screenshot from 2026-05-10 18-54-56.png)
 Concluzii
 
 Proiectul a atins cu succes obiectivele propuse:
