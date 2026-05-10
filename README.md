@@ -60,7 +60,7 @@ cd curs_scc_443D_tari
 ./ruleaza_aplicatia
 
 Aplicația poate fi accesată la: http://127.0.0.1:5011/serbia
-![](screenshots/nume_exact_poza.png)
+![](screenshots/Screenshot from 2026-05-10 15-51-26.png)
 Rute disponibile:
 
     /serbia - pagina principală
@@ -71,7 +71,7 @@ Rute disponibile:
 
     /serbia/steag - steagul
 
-[SCREENSHOT: Aplicația locală în browser]
+![]
 Testare automată cu pytest
 bash
 
