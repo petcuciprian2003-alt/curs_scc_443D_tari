@@ -60,7 +60,7 @@ cd curs_scc_443D_tari
 ./ruleaza_aplicatia
 
 Aplicația poate fi accesată la: http://127.0.0.1:5011/serbia
-
+![](screenshots/nume_exact_poza.png)
 Rute disponibile:
 
     /serbia - pagina principală
