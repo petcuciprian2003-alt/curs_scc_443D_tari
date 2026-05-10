@@ -1,4 +1,3 @@
-
 # Proiect SCC - Țări
 
 ## Dezvoltator
@@ -54,7 +53,7 @@ Aplicația este implementată utilizând framework-ul web Flask, fiind proiectat
 
 **Rulare locală:**
 
-bash
+```bash
 cd curs_scc_443D_tari
 . ./activeaza_venv
 ./ruleaza_aplicatia
