@@ -80,7 +80,7 @@ pytest app/tests/test_lib_serbia.py -v
 
 Rezultat: 4/4 teste trecute cu succes ✅
 
-[SCREENSHOT: pytest 4 passed]
+![](screenshots/Screenshot from 2026-05-10 14-12-21.png)
 Testare cu Docker
 bash
 
