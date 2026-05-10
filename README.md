@@ -59,7 +59,7 @@ cd curs_scc_443D_tari
 ./ruleaza_aplicatia
 Aplicația poate fi accesată la: http://127.0.0.1:5011/serbia
 
-![](screenshots/Screenshot from 2026-05-10 15-51-26.png)
+![](screenshots/serbia-local.png)
 
 Rute disponibile:
 
@@ -71,7 +71,7 @@ Rute disponibile:
 
     /serbia/steag - steagul
 
-![](screenshots/Screenshot from 2026-05-10 14-40-38.png)
+![](screenshots/serbia-rute.png)
 Testare automată cu pytest
 bash
 
@@ -80,22 +80,22 @@ pytest app/tests/test_lib_serbia.py -v
 
 Rezultat: 4/4 teste trecute cu succes ✅
 
-![](screenshots/Screenshot from 2026-05-10 14-12-21.png)
+![](screenshots/serbia-pytest.png)
 Testare cu Docker
 bash
 
 docker build -t tari:v01 .
 
-![](screenshots/Screenshot from 2026-05-10 15-35-45.png)
+![](screenshots/serbia-docker-build.png)
 bash
 
 docker run -d --name tari_serbia -p 8020:5000 tari:v01
 
-![](screenshots/Screenshot from 2026-05-10 15-37-46.png)
+![](screenshots/serbia-docker-run.png)
 
 Accesare: http://localhost:8020/serbia
 
-![](screenshots/Screenshot from 2026-05-10 15-50-31.png)
+![](screenshots/serbia-docker-browser.png)
 DevOps CI - Jenkins
 
 Pipeline-ul Jenkins include:
@@ -106,7 +106,7 @@ Pipeline-ul Jenkins include:
 
     Build Docker - construire imagine
 
-![](screenshots/Screenshot from 2026-05-10 18-54-56.png)
+![](screenshots/serbia-jenkins.png)
 Concluzii
 
 Proiectul a atins cu succes obiectivele propuse:
