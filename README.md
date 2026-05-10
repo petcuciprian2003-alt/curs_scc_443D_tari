@@ -102,7 +102,7 @@ Pipeline-ul Jenkins include:
 
     Build Docker - construire imagine
 
-[SCREENSHOT: Jenkins grafic + Console Output SUCCESS]
+1[](screenshots/Screenshot from 2026-05-10 18-54-56.png)
 Concluzii
 
 Proiectul a atins cu succes obiectivele propuse:
