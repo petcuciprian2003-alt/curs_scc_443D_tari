@@ -91,7 +91,7 @@ docker run -d --name tari_serbia -p 8020:5000 tari:v01
 
 Accesare: http://localhost:8020/serbia
 
-[SCREENSHOT: Docker build + run + browser]
+![](screenshots/Screenshot from 2026-05-10 15-50-31.png)
 DevOps CI - Jenkins
 
 Pipeline-ul Jenkins include:
