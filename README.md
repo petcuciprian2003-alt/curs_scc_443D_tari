@@ -51,16 +51,16 @@ Aplicația este implementată utilizând framework-ul web Flask, fiind proiectat
 
 ## Testare manuală în browser
 
-
 **Rulare locală:**
 
 ```bash
 cd curs_scc_443D_tari
 . ./activeaza_venv
 ./ruleaza_aplicatia
-
 Aplicația poate fi accesată la: http://127.0.0.1:5011/serbia
+
 ![](screenshots/Screenshot from 2026-05-10 15-51-26.png)
+
 Rute disponibile:
 
     /serbia - pagina principală
@@ -85,8 +85,12 @@ Testare cu Docker
 bash
 
 docker build -t tari:v01 .
+
 ![](screenshots/Screenshot from 2026-05-10 15-35-45.png)
+bash
+
 docker run -d --name tari_serbia -p 8020:5000 tari:v01
+
 ![](screenshots/Screenshot from 2026-05-10 15-37-46.png)
 
 Accesare: http://localhost:8020/serbia
@@ -102,7 +106,7 @@ Pipeline-ul Jenkins include:
 
     Build Docker - construire imagine
 
-1[](screenshots/Screenshot from 2026-05-10 18-54-56.png)
+![](screenshots/Screenshot from 2026-05-10 18-54-56.png)
 Concluzii
 
 Proiectul a atins cu succes obiectivele propuse:
